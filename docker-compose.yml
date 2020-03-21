@@ -15,4 +15,4 @@ services:
     build: ./docker-php-fpm
     volumes:
       - ./:/var/www/html
-      - ./docker-web/docker-php-ext-opcache.ini:/usr/local/etc/php/conf.d/docker-php-ext-opcache.ini
+      - ./docker-php-fpm/docker-php-ext-opcache.ini:/usr/local/etc/php/conf.d/docker-php-ext-opcache.ini
